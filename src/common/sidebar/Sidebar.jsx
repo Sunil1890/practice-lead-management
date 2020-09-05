@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Layout, Menu } from "antd";
 import {
   UserOutlined,
@@ -7,18 +7,19 @@ import {
   MenuFoldOutlined,
   VideoCameraOutlined
 } from "@ant-design/icons";
+import Cookies from "js-cookie";
 import Routes from "../../Routes";
 
 function Sidebar() {
   const { Header, Content, Sider } = Layout;
   const [collapsed, setCollapsed] = useState(false);
-  const history = useHistory();
 
   const toggle = () => {
     setCollapsed(!collapsed);
   };
   const logout =() => {
-    history.push('/login')
+    Cookies.remove("token");
+    window.location.pathname = '/login'
   }
   return (
     <Layout>
