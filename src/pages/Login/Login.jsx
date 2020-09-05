@@ -4,11 +4,14 @@ import { Form, Input, Button, Row, Col, Image } from 'antd';
 function Login() {
   return (
     <Row type="flex" justify="center" align="middle" style={{ minHeight: '100vh' }}>
-      <Col span={8} className="align-center form-login-container">
-        <Image
-          width={120}
-          src="https://simplehq.co/wp-content/uploads/2017/02/image-placeholder-blue.png"
-        />
+      <Col span={8} className="form-login-container">
+        <Col type="flex" justify="center" align="middle">
+          <Image
+            width={120}
+            src="https://simplehq.co/wp-content/uploads/2017/02/image-placeholder-blue.png"
+            preview={false}
+          />
+        </Col>
         <Form
           name="basic"
           initialValues={{
