@@ -24,6 +24,8 @@ const data = [
 function LeadDetails() {
   return (
     <div className="lead-details">
+{/* TODOs: Separate this component with name of 'UsersDetail' */}
+
       <Row>
         <Col span={8} className="lead-info">
           <Title level={2}>John Doe</Title>
@@ -55,6 +57,7 @@ function LeadDetails() {
         </Col>
       </Row>
 
+{/* TODOs: Separate recent comment component with name of 'RecentComments' */}
       <Row>
         <Col span={8}></Col>
         <Col span={16}>
@@ -75,6 +78,7 @@ function LeadDetails() {
         </Col>
       </Row>
 
+    {/* TODOs: Use form */}
       <Row>
         <Col span={8}></Col>
         <Col span={16} >
