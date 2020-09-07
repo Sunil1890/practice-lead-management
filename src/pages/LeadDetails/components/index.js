@@ -1,4 +1,6 @@
 export { LeadDetails } from './LeadDetails'
+export { UsersDetail } from './UsersDetail'
+export { RecentComments } from './RecentComments'
 
 // TODO: Give folder name intial letter
 // LeadDetails should be leadDetails

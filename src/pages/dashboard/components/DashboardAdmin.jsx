@@ -20,7 +20,7 @@ const data = [
 function DashboardAdmin() {
   return (
     <List
-      scroll={{ y: 'calc(100vh - 4em)' }}
+      className="scrollable"
       size="large"
       header={<Title level={4}>Recent Activity</Title>}
       bordered
