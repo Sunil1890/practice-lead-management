@@ -3,10 +3,16 @@
 
 .App {
   background: @warning-color;
+}
 
-  .logo {
-    height: 65px;
-  }
+.logo {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.link {
+  cursor: pointer;
 }
 
 .ant-layout {
@@ -19,7 +25,7 @@
 
 .form-login-container {
   padding: 16px 32px;
-  background-color: #F1F1F1;
+  background-color: @greyish-white;
   border-radius: 4px;
 }
 
@@ -42,15 +48,19 @@
 }
 
 .site-layout .site-layout-background {
-  background: #fcfcfcf5;
+  background: #fcfcfc;
 }
 
 .ant-layout-header {
   height: 64px;
-  padding: 0 50px;
-  color: white;
+  padding: 0 18px;
   background: rgb(170, 170, 170);
   line-height: 64px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .ant-layout-sider {
@@ -58,4 +68,53 @@
   min-width: 0;
   background: white;
   transition: all 0.2s;
+}
+
+.sidebar-container {
+  position: relative;
+
+  .sidebar-trigger {
+    background-color: @primary-color;
+    color: @greyish-white;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+  }
+}
+
+// override
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-item {
+  margin-top: 0;
+}
+
+.lead-details {
+  .lead-info {
+    border: 1px solid @light-grey;
+    border-radius: 2px;
+    padding: 16px 24px;
+  }
+
+  .lead-details-tabs {
+    border-top: 1px solid @light-grey;
+    border-right: 1px solid @light-grey;
+    border-radius: 2px;
+    padding: 16px 24px;
+  }
+
+  .comment-section {
+    .ant-col:nth-child(1) {
+      padding: 16px 8px 16px 0;
+    }
+
+    .ant-col:nth-child(2) {
+      padding: 16px 8px;
+    }
+
+    .ant-col:nth-child(3) {
+      padding: 16px 0 16px 8px;
+    }
+  }
 }
