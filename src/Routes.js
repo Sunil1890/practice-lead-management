@@ -1,9 +1,9 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import LeadManagement from "./pages/leadManagement/components/LeadManagement";
 // import Dashboard from "./pages/dashboard/components/DashboardSales";
 import Dashboard from "./pages/dashboard/components/DashboardAdmin";
 import LeadDetails from "./pages/leadDetails/components/LeadDetails";
+import LeadManagement from "./pages/leadManagement/components/LeadManagement";
 
 function Routes() {
   return (
