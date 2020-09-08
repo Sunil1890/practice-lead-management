@@ -3,7 +3,7 @@ import "./assets/styles/App.less";
 
 import Cookies from "js-cookie";
 import Sidebar from "./common/sidebar/Sidebar";
-import Login from "./pages/Login/Login";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       {Cookies.get("token") ? (
         <Sidebar />
       ) : (
-        <Login />
-      )}
+          <Login />
+        )}
     </>
   );
 }
